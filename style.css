@@ -51,6 +51,7 @@ header {
     align-items: center;
     position: fixed;
     width: 100%;
+    height: auto;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -226,7 +227,7 @@ nav a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
+    /* text-fill-color: transparent; */
     text-transform: none;
     padding-bottom: 0;
     font-weight: 800;
@@ -302,7 +303,7 @@ nav a:hover {
 .projects {
     background: #fff;
     transition: background-color 0.3s ease;
-    padding: 30px 0;
+    padding: 10px 0;
 }
 
 .projects h2 {
@@ -313,11 +314,11 @@ nav a:hover {
 
 .projects-container {
     max-width: var(--container-width);
-    margin: 0 auto;
+    margin: -10px auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    padding: 10px 1rem;
+    padding: 5px 1rem;
 }
 
 .project-card {
@@ -325,12 +326,6 @@ nav a:hover {
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-}
-
-.project-image img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
 }
 
 .project-content {
@@ -383,6 +378,8 @@ nav a:hover {
     background: #f8f9fa;
     padding: 7rem 0;
     min-height: auto;
+    margin-top: 100px ;
+    margin-bottom: 0;
 }
 
 .skills h2 {
@@ -450,11 +447,12 @@ nav a:hover {
     padding: 7rem 0;
     background: #fff;
     min-height: auto;
+    /* margin-top: 200px; */
 }
 
 .cert-container {
     max-width: var(--container-width);
-    margin: 0 auto;
+    margin: 50px auto;
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -465,6 +463,7 @@ nav a:hover {
 .cert-card {
     background: #fff;
     border-radius: 15px;
+    width: 400px;
     padding: 2rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     position: relative;
