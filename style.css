@@ -373,6 +373,31 @@ nav a:hover {
     color: #00ccff;
 }
 
+/* Project GitHub Button */
+.project-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+    color: #fff !important;
+    border-radius: 25px;
+    font-weight: 600;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.project-btn i {
+    font-size: 1rem;
+}
+
+.project-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+    opacity: 0.95;
+}
+
+
 /* Skills Section - Increased Margin */
 .skills {
     background: #f8f9fa;
@@ -704,3 +729,4 @@ section h2::before {
     background: var(--primary-gradient);
     border-radius: 5px;
 } 
+
